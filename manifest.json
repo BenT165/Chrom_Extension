@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "author": "Ben Tate",
-    "name": "CS395 - New Tab",
+    "name": "Funky Time",
     "version": "0.1",
     "description": "This extension overrides the default new tab.",
     "icons": {
