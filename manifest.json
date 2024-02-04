@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "author": "Studious Student",
+    "author": "Ben Tate",
     "name": "CS395 - New Tab",
     "version": "0.1",
     "description": "This extension overrides the default new tab.",
