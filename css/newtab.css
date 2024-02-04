@@ -5,3 +5,7 @@ body {
     display: flex;
     align-items: center;
 }
+
+.image_container {
+    max-height: 500px;
+}
