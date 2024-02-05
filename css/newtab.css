@@ -30,7 +30,7 @@ body {
     font-size: 60px;
     font-family: sans-serif;
     opacity: 95%;
-    color: white;
+    color: silver;
     background-color: teal;
     margin-top: 410px;
     border-radius: 6px;
@@ -49,5 +49,6 @@ body {
     background-color: purple;
     border-radius: 10px;
     transform:  translate(-50%, -50%);
+    padding: 8px;
 }
 
