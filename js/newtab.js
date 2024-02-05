@@ -15,6 +15,17 @@ let name = document.getElementById("name");
 //whether or not to display seconds on the clock
 let precision = false;
 
+//button for generating quotes
+let quote_button = document.getElementById("quote");
+
+quote_button.addEventListener("click", generateQuote);
+
+
+function generateQuote() {
+
+    console.log("something witty");
+}
+
 //updates greeting to have most recent name of user
 function restore_name(){
     chrome.storage.sync.get(['name'], function(result) {
