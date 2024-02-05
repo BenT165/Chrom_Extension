@@ -6,11 +6,19 @@ let time = "";
 //div with the timer
 let timer = document.getElementById("currentTime");
 
+//greeting for user
+let greeting = document.getElementById("myGreeting");
+
 //whether or not to display seconds in time
 let precision = false;
 
 timer.addEventListener("mouseover", toggle, false);
 timer.addEventListener("mouseout", toggle, false);
+
+//greeting.ondblclick = function() {
+    //var new_greeting = prompt();
+    //greeting.innerText = ("Hello, " + new_greeting);
+//}
 
 function getTimeMinutes() {
     var today = new Date();
