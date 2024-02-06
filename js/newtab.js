@@ -1,30 +1,49 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // string representing the current time
+    let time = "";
+
+    // div with the clock
+    let timer = document.getElementById("currentTime");
+
+    // greeting for user
+    let greeting = document.getElementById("myGreeting");
+
+    // name within greeting div (editable part of the phrase)
+    let name = document.getElementById("name");
+
+    // whether or not to display seconds on the clock
+    let precision = false;
+
+    // button for generating quotes
+    let quote_button = document.getElementById("quote_button");
+
+    quote_button.addEventListener("click", generateQuote);
+
+    function generateQuote() {
+        fetch('https://api.quotable.io/random')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error, status = ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                const quote = `"${data.content}"\n- ${data.author}`;
+                var qu=document.getElementById("quote_text");
+                qu.style.display="flex";
+                qu.innerText = quote;
+                
+            })
+            .catch(error => {
+                console.log(error);
+                document.getElementById('quote_text').innerText = 'An error occurred. Please try again later.';
+            });
+    }
+
     
-//string representing the current time
-let time = "";
+    
+        
 
-//div with the clock
-let timer = document.getElementById("currentTime");
-
-//greeting for user
-let greeting = document.getElementById("myGreeting");
-
-//name within greeting div (editable part of phrase)
-let name = document.getElementById("name");
-
-//whether or not to display seconds on the clock
-let precision = false;
-
-//button for generating quotes
-let quote_button = document.getElementById("quote");
-
-quote_button.addEventListener("click", generateQuote);
-
-
-function generateQuote() {
-
-    console.log("something witty");
-}
 
 //updates greeting to have most recent name of user
 function restore_name(){

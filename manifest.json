@@ -3,6 +3,7 @@
     "author": "Ben Tate",
     "name": "Funky Time",
     "permissions": ["storage"],
+    
     "version": "0.1",
     "description": "This extension overrides the default new tab.",
     "icons": {

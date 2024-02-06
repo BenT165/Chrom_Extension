@@ -39,6 +39,8 @@ body {
     margin-top: 400px;
     border-radius: 10px;
     padding: 5px;
+    left: 50%;
+    transform: translateX(-50%);
 
 }
 
@@ -100,12 +102,51 @@ button:hover {
     opacity: 90%;
 }
 
+.myQuote {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    color: rgb(247, 247, 17);
+    font-size: 14px;
+    border-radius: 15px;
+    margin-top: 500px;
+    max-width: 400px;
+    padding: 7px;
 
-
-li {
-    flex-grow: 1;
+    background: rgba(151, 151, 144, 0.11);
+    backdrop-filter: blur(12px);
+    font-family: 'Courier New', Courier, monospace; 
 }
 
+#pomodoro-timer {
+    text-align: center;
+    margin-top: 10px; /* Adjusted margin-top to 10px */
+    font-size: 2rem;
+    color: white; /* Added color */
+    background-color: rgb(20, 140, 167); /* Added background color */
+    border-radius: 10px; /* Added border radius */
+    padding: 10px; /* Added padding for better visibility */
+    width: 200px;
+    height: 100px;
+    margin-top: 550px;
+    align-items: center;
+}
+
+.clock {
+    background-color: red;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: grey;
 
 
-
+}
